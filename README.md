@@ -83,11 +83,7 @@ Dataset Download
 Examples of Anomalies
 | Peds1 : Cart                        | Peds1 : Wheelchair                  |
 | ----------------------------------- | ----------------------------------- |
-|  ![vidf4_33_007_frame080_mark](https://github.com/priyanka011011/Crowd-Anomaly-Detection/assets/63203112/92aff7f9-a790-472d-b7f9-4211e4cf9147)|  | ![vidf3_33_002_frame110_mark](https://github.com/priyanka011011/Crowd-Anomaly-Detection/assets/63203112/fe32f054-303d-44cb-bf29-2e7d6791beb9)
-| ----------------------------------- | ----------------------------------- |
-| Cat pics                            | Dog pics                            |
-| ----------------------------------- | ----------------------------------- |
-| ![cat](https://example.com/cat.png) | ![dog](https://example.com/dog.png) |
+|  ![vidf4_33_007_frame080_mark](https://github.com/priyanka011011/Crowd-Anomaly-Detection/assets/63203112/92aff7f9-a790-472d-b7f9-4211e4cf9147)|  | ![vidf3_33_002_frame110_mark](https://github.com/priyanka011011/Crowd-Anomaly-Detection/assets/63203112/fe32f054-303d-44cb-bf29-2e7d6791beb9)  |
 
 
 
