@@ -13,29 +13,43 @@ anomaly detection and localization can be broken down into two sub-problems: 1) 
 
 ![MDT_vidf4_33_007_88](https://github.com/priyanka011011/Crowd-Anomaly-Detection/assets/63203112/1b8fafa8-0689-47b5-9e9f-d17d37fc899b)
 
-Methodology
-(describe the steps) There are 10000 different news stories and additional news stories.
+## Methodology
+The methodology for anomaly detection in crowded environments, involves two main components: characterizing crowd behaviors and measuring the "anomaly score" of specific behaviors. Here is an overview of the proposed methodology:
 
-Run the classifier on 1 mln random stories out of 1000 news sources. Get 10k stories where the classifier output is the closest to the decision boundary and get these examples labeled.
-Get 10k random labeled stories from the 10k random labeled stories from 1000 news we care about.
-Pick a random sample of 1 mln stories from 1000 news sources and have them labeled. Pick the subset of 10k stories where the model’s output is both wrong and farthest away from the decision boundary.
-Using different methods of classifying a bag of news articles from 1000 news sources, measure the accuracy of the model with an original train dataset.
+-- Characterizing Crowd Behaviors:
 
-Business Segments
-(advise for which business segments you can apply the model) Business Segments are the following, please following the names of business segments given:
+- Mixture of Dynamic Textures (MDT): The project suggests using MDT to model motion patterns in crowds. MDT is a unified description that captures both the appearance and dynamics of visual processes in crowded scenes.
 
-Airlines
-Autonomous Driving
-Banking & Finance
-Business & Private Sector
-Government & Public Services
-Healthcare
-Human Resources
-Lifestyle & Social Media
-Media & Publishing
-Retail & E-commerce
-AI Application
-(describe how your model can be useful in real life or business)
+- MDT captures the complexity and dynamics of crowded scenes by considering the spatial and temporal variations in the video data. It helps in modeling the visual processes and behaviors exhibited by the crowd.
+Measuring Anomaly Score:
+
+- Learning Normalcy: The methodology involves learning the normal behavior of the crowd first. This is done by modeling the expected patterns, motion, and appearance characteristics of a typical crowd behavior.
+
+- Anomaly Score Computation: Once the normalcy model is established, the anomaly score of an observation or behavior is computed by measuring the difference or deviation from the normalcy model.
+
+- Two Components of Normalcy: The methodology proposes two components to reflect the normalcy from different perspectives, although the specific details of these components are not mentioned in the given information.
+
+The combination of characterizing crowd behaviors using MDT and measuring the anomaly score based on the deviation from the normalcy model enables the detection of deviations from normal crowd behaviors in densely crowded environments.
+
+## Business Segments
+Anomaly detection in crowded environments, the potential business segments that could benefit from this technology include:
+
+- Security and Surveillance: Anomaly detection in crowded scenes can significantly enhance security and surveillance systems. It can help identify suspicious or abnormal behavior in real-time, enabling early detection of potential threats or criminal activities.
+
+- Transportation and Infrastructure: Monitoring crowded transportation hubs, such as airports, train stations, or bus terminals, can be crucial for ensuring smooth operations and passenger safety. Anomaly detection can help identify unusual or abnormal crowd behaviors that may indicate congestion, security breaches, or other issues requiring intervention.
+
+- Event Management: Anomaly detection can be valuable in managing large-scale events, such as concerts, festivals, or sports games. It can help organizers identify and respond to crowd-related incidents, such as overcrowding, unauthorized access, or potentially dangerous situations, improving crowd safety and overall event experience.
+
+- Retail and Commercial Spaces: Detecting anomalies in crowded retail environments can assist in loss prevention, identifying suspicious activities, or unusual behaviors that may indicate theft, shoplifting, or other security concerns. It can also provide insights into customer behavior patterns and optimize store layouts.
+
+- Crowd Control and Safety: Anomaly detection technology can be applied to ensure crowd control and safety in public spaces, including city centers, parks, or tourist attractions. It can help monitor crowd density, detect overcrowding situations, and identify potential safety risks or emergencies in real-time.
+
+- Public Safety and Law Enforcement: Anomaly detection can support law enforcement agencies in public safety efforts, such as crowd management during protests, demonstrations, or public gatherings. It can assist in identifying unusual crowd behaviors, potential threats, or criminal activities, aiding in proactive and timely responses.
+
+- Smart City Applications: Anomaly detection in crowded environments aligns with the concept of smart cities, where data-driven technologies are leveraged to enhance urban management. It can contribute to intelligent urban planning, traffic optimization, and overall safety and security in densely populated areas.
+
+- These business segments highlight potential applications of anomaly detection technology in various industries where monitoring crowded scenes and identifying deviations from normal behaviors is critical for operational efficiency, safety, and security.
+
 
 ## Objective
 The objective of the project is to detect deviations from normal crowd behaviors in densely crowded environments. The motivation behind this objective is the prevalence of camera surveillance systems, the challenges in modeling crowd behaviors, and the importance of automatic crowd monitoring for various applications.
@@ -50,7 +64,7 @@ The proposed approach for anomaly detection in crowded scenes involves two main 
 # Predictions Format:
 The specific format for predictions or outputs generated by the anomaly detection system is not mentioned in the given information. However, it can be inferred that the output would include anomaly scores for observations or behaviors in crowded scenes. The anomaly score indicates the degree of deviation from normal crowd behaviors, helping to identify abnormal events or occurrences in real-time monitoring scenarios.
 
-Papers
+## Papers
 - Anomaly Detection in Crowded Scenes
   Vijay Mahadevan, Weixin Li, Viral Bhalodia and Nuno Vasconcelos.
   In Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR),
