@@ -8,8 +8,9 @@ Anomaly detection is an active area of research on its own. Various approaches h
 
 anomaly detection and localization can be broken down into two sub-problems: 1) how to characterize crowd behaviors, and 2) how to measure the "anomaly score" of a specific behavior. For the first issue, we propose to model motion patterns in crowds via the use of mixture of dynamic textures (MDT), which is a unified description capturing both the appearance and dynamics of visual processes. In the second part, instead of directly modeling the anomalous behavior itself, the normalcy is first learnt, and then the "anomaly score" of an observation is computed by measuring the difference from the normalcy model. Specifically, two components are proposed to reflect the normalcy in different perspectives.  
 
-| ![peds0_biker](https://github.com/priyanka011011/Crowd-Anomaly-Detection/assets/63203112/1ba3d710-e01f-47b2-b23f-442a815a80bc) | ![MDT_vidf4_33_007_88](https://github.com/priyanka011011/Crowd-Anomaly-Detection/assets/63203112/1b8fafa8-0689-47b5-9e9f-d17d37fc899b) |
-
+<p float="center">
+ ![peds0_biker](https://github.com/priyanka011011/Crowd-Anomaly-Detection/assets/63203112/1ba3d710-e01f-47b2-b23f-442a815a80bc)  ![MDT_vidf4_33_007_88](https://github.com/priyanka011011/Crowd-Anomaly-Detection/assets/63203112/1b8fafa8-0689-47b5-9e9f-d17d37fc899b) 
+</p>
 
 ## Methodology
 The methodology for anomaly detection in crowded environments, involves two main components: characterizing crowd behaviors and measuring the "anomaly score" of specific behaviors. Here is an overview of the proposed methodology:
