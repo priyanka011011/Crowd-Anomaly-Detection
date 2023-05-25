@@ -16,7 +16,7 @@ anomaly detection and localization can be broken down into two sub-problems: 1) 
 ## Methodology
 The methodology for anomaly detection in crowded environments, involves two main components: characterizing crowd behaviors and measuring the "anomaly score" of specific behaviors. Here is an overview of the proposed methodology:
 
-- <u> Mixture of Dynamic Textures (MDT) </u>: The project suggests using MDT to model motion patterns in crowds. MDT is a unified description that captures both the appearance and dynamics of visual processes in crowded scenes.
+- <u>Mixture of Dynamic Textures (MDT)</u>: The project suggests using MDT to model motion patterns in crowds. MDT is a unified description that captures both the appearance and dynamics of visual processes in crowded scenes.
 
 MDT captures the complexity and dynamics of crowded scenes by considering the spatial and temporal variations in the video data. It helps in modeling the visual processes and behaviors exhibited by the crowd.
 - <u> Measuring Anomaly Score </u>:
