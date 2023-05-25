@@ -58,7 +58,7 @@ Papers
 Demo link
 Record a 1 min demo and kindly provide a link for this.
 
-Team
--- Sanjeeb Tiwary (sanjeebtiwary)
--- Vaibhavi (Vaibhavi15-04)
--- Paramesh (Paramaatma)
+## Team
+__Sanjeeb Tiwary (sanjeebtiwary)__
+__ Vaibhavi (Vaibhavi15-04)
+__ Paramesh (Paramaatma)
