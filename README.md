@@ -16,16 +16,16 @@ anomaly detection and localization can be broken down into two sub-problems: 1) 
 ## Methodology
 The methodology for anomaly detection in crowded environments, involves two main components: characterizing crowd behaviors and measuring the "anomaly score" of specific behaviors. Here is an overview of the proposed methodology:
 
-- Mixture of Dynamic Textures (MDT): The project suggests using MDT to model motion patterns in crowds. MDT is a unified description that captures both the appearance and dynamics of visual processes in crowded scenes.
+- <u> Mixture of Dynamic Textures (MDT) </u>: The project suggests using MDT to model motion patterns in crowds. MDT is a unified description that captures both the appearance and dynamics of visual processes in crowded scenes.
 
-- MDT captures the complexity and dynamics of crowded scenes by considering the spatial and temporal variations in the video data. It helps in modeling the visual processes and behaviors exhibited by the crowd.
-Measuring Anomaly Score:
+MDT captures the complexity and dynamics of crowded scenes by considering the spatial and temporal variations in the video data. It helps in modeling the visual processes and behaviors exhibited by the crowd.
+- <u> Measuring Anomaly Score </u>:
 
-- Learning Normalcy: The methodology involves learning the normal behavior of the crowd first. This is done by modeling the expected patterns, motion, and appearance characteristics of a typical crowd behavior.
+   - <u> Learning Normalcy </u>: The methodology involves learning the normal behavior of the crowd first. This is done by modeling the expected patterns, motion, and  appearance characteristics of a typical crowd behavior.
 
-- Anomaly Score Computation: Once the normalcy model is established, the anomaly score of an observation or behavior is computed by measuring the difference or deviation from the normalcy model.
+   - <u> Anomaly Score Computation </u>: Once the normalcy model is established, the anomaly score of an observation or behavior is computed by measuring the difference or deviation from the normalcy model.
 
-- Two Components of Normalcy: The methodology proposes two components to reflect the normalcy from different perspectives, although the specific details of these components are not mentioned in the given information.
+   - <u> Two Components of Normalcy </u>: The methodology proposes two components to reflect the normalcy from different perspectives, although the specific details of these components are not mentioned in the given information.
 
 The combination of characterizing crowd behaviors using MDT and measuring the anomaly score based on the deviation from the normalcy model enables the detection of deviations from normal crowd behaviors in densely crowded environments.
 
