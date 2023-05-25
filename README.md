@@ -87,6 +87,11 @@ Examples of Anomalies
 | ![vidf4_33_007_frame080_mark](https://github.com/priyanka011011/Crowd-Anomaly-Detection/assets/63203112/92aff7f9-a790-472d-b7f9-4211e4cf9147) |  ![vidf3_33_002_frame110_mark](https://github.com/priyanka011011/Crowd-Anomaly-Detection/assets/63203112/fe32f054-303d-44cb-bf29-2e7d6791beb9) |
 
 
+| Peds1 : Skater                      | Peds1 : Biker                       |
+| ----------------------------------- | ----------------------------------- |
+| ![vidf1_33_008_frame130_mark](https://github.com/priyanka011011/Crowd-Anomaly-Detection/assets/63203112/5c060288-5138-43a0-9d24-787c8531a061)| ![vidf1_33_002_frame138_mark](https://github.com/priyanka011011/Crowd-Anomaly-Detection/assets/63203112/785b87bc-5a75-42ff-baad-4e949e10269f)
+ |
+
 ## Papers
 - Anomaly Detection in Crowded Scenes
    Vijay Mahadevan, Weixin Li, Viral Bhalodia and Nuno Vasconcelos.
