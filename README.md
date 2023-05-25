@@ -1,10 +1,14 @@
-**Use Case: ZAF043 Crowd Anomaly Detection**
-##Overview
+## Use Case: ZAF043 Crowd Anomaly Detection
+
+
+## Overview
 This project is part of our efforts in solving problems in densely crowded environments analysis. Following our previous topics in classifying crowd states, segmenting videos into components, estimating crowd size and tracking objects in crowds, the goal here is to detect the deviations from normal crowd behaviors, which is motivated by the ubiquity of camera surveillance systems, the challenges in modeling crowd behaviors, and the importance of automatic crowd monitoring for various applications.
 
 Anomaly detection is an active area of research on its own. Various approaches have been proposed, for both crowded and non-crowded scenes. Existing approaches focus uniquely on motion information, ignoring abnormality information due to variations of object appearance. This makes them impervious to abnormalities that do not involve motion outliers, e.g., a truck that crosses a bridge with weight restrictions. Furthermore, descriptors such as optical flow, pixel change histograms, or other traditional background subtraction operations, are difficult for crowded scenes, where the background is by definition dynamic, of widespread clutter, and complicated occlusions.
 
-anomaly detection and localization can be broken down into two sub-problems: 1) how to characterize crowd behaviors, and 2) how to measure the "anomaly score" of a specific behavior. For the first issue, we propose to model motion patterns in crowds via the use of mixture of dynamic textures (MDT), which is a unified description capturing both the appearance and dynamics of visual processes. In the second part, instead of directly modeling the anomalous behavior itself, the normalcy is first learnt, and then the "anomaly score" of an observation is computed by measuring the difference from the normalcy model. Specifically, two components are proposed to reflect the normalcy in different perspectives.
+anomaly detection and localization can be broken down into two sub-problems: 1) how to characterize crowd behaviors, and 2) how to measure the "anomaly score" of a specific behavior. For the first issue, we propose to model motion patterns in crowds via the use of mixture of dynamic textures (MDT), which is a unified description capturing both the appearance and dynamics of visual processes. In the second part, instead of directly modeling the anomalous behavior itself, the normalcy is first learnt, and then the "anomaly score" of an observation is computed by measuring the difference from the normalcy model. Specifically, two components are proposed to reflect the normalcy in different perspectives.  
+
+
 ![peds0_biker](https://github.com/priyanka011011/Crowd-Anomaly-Detection/assets/63203112/1ba3d710-e01f-47b2-b23f-442a815a80bc)
 
 ![MDT_vidf4_33_007_88](https://github.com/priyanka011011/Crowd-Anomaly-Detection/assets/63203112/1b8fafa8-0689-47b5-9e9f-d17d37fc899b)
