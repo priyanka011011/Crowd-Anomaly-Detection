@@ -78,7 +78,7 @@ Commonly occurring anomalies include bikers, skaters, small carts, and people wa
 For each clip, the ground truth annotation includes a binary flag per frame, indicating whether an anomaly is present at that frame. In addition, a subset of 10 clips for Peds1 and 12 clips for Peds2 are provided with manually generated pixel-level binary masks, which identify the regions containing anomalies. This is intended to enable the evaluation of performance with respect to ability of algorithms to localize anomalies.
 
 Dataset Download
-- UCSD Anomaly Detection Dataset
+- [UCSD Anomaly Detection Dataset](https://drive.google.com/drive/folders/1uEDcZTREx5Ysy1TvE_FugLcDK1vhPFmk?usp=sharing)
 
 Examples of Anomalies
 
