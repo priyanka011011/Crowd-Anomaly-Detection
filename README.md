@@ -123,13 +123,13 @@ To use the MDT model effectively, here are some essential recommendations for th
 - Model Evaluation and Refinement: Regularly evaluate the model's performance and retrain or refine it as needed. Collect feedback from the system's users and incorporate their insights to enhance the model's accuracy and adaptability.
 
 
-To use the given model follow the instructions below:
+- To use the given model follow the instructions below:
 
-- Clone the repository using the following command
-       - git clone https://github.com/priyanka011011/Crowd-Anomaly-Detection
-- Install the requirements using the below command
-       - pip install -r requirements.txt
-Run 'load_predict.py' to run the model on given test.avi.
+     - Clone the repository using the following command
+               - git clone https://github.com/priyanka011011/Crowd-Anomaly-Detection
+     - Install the requirements using the below command
+                 - pip install -r requirements.txt
+      - Run 'load_predict.py' to run the model on given test.avi.
 
 ## Team
 - Sanjeeb Tiwary 
