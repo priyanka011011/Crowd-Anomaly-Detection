@@ -130,10 +130,14 @@ To use the MDT model effectively, here are some essential recommendations for th
 - To use the given model follow the instructions below:
 
      - Clone the repository using the following command
+   
                - git clone https://github.com/priyanka011011/Crowd-Anomaly-Detection
+       
      - Install the requirements using the below command
+  
                  - pip install -r requirements.txt
-      - Run 'load_predict.py' to run the model on given test.avi.
+     
+     - Run 'load_predict.py' to run the model on given test.avi.
 
 ## Team
 - Sanjeeb Tiwary 
