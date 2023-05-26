@@ -105,6 +105,23 @@ Examples of Anomalies
   - [pdf](http://www.svcl.ucsd.edu/publications/journal/2013/pami.anomaly/pami_anomaly.pdf)  
   - [BitTeX](https://scholar.googleusercontent.com/scholar.bib?q=info:NyHX-w2VTwwJ:scholar.google.com/&output=citation&scisdr=Cm13Jnw7EMW_o_H15ao:AGlGAw8AAAAAZG7z_aoDnxf4jjNFfori1TUDp3Q&scisig=AGlGAw8AAAAAZG7z_RYIxRaV062HgyYdtuuMGoQ&scisf=4&ct=citation&cd=-1&hl=en)
 
+## Instruction how to use the model.ipynb
+To use the MDT model effectively, here are some essential recommendations for the client:
+
+- Training Data: Ensure that a diverse and representative dataset of crowd behavior is used for training the model. The training data should contain both normal and anomalous crowd behavior to capture a wide range of patterns.
+
+- Feature Extraction: Use the extract_features function to extract optical flow features from the frames in the training data. Adjust the feature extraction process if needed, considering other relevant features or preprocessing techniques that might improve anomaly detection performance.
+
+- Training: Train the MDT model using the extracted features and the 'train_mdt_model' function. Experiment with different values for the num_components parameter to find the optimal number of components in the Gaussian Mixture Model. Consider using cross-validation techniques to evaluate and fine-tune the model.
+
+- Anomaly Score Computation: Compute the anomaly score for a new observation (frame) using the 'compute_anomaly_score' function. Provide the new observation as input, which should be preprocessed and converted into features using the extract_features function. The lower the anomaly score, the more normal the behavior, and higher scores indicate potential anomalies.
+
+- Threshold Selection: Determine an appropriate threshold for anomaly detection based on the specific requirements and characteristics of the crowd behavior. Evaluate the model's performance on validation or test data to find a threshold that balances detection accuracy and false positives/negatives.
+
+- Real-Time Monitoring: Integrate the trained model into a real-time monitoring system to detect anomalies in crowd behavior as it occurs. Continuously feed new frames into the model and monitor the anomaly scores to identify potential abnormal events promptly.
+
+- Model Evaluation and Refinement: Regularly evaluate the model's performance and retrain or refine it as needed. Collect feedback from the system's users and incorporate their insights to enhance the model's accuracy and adaptability.
+
 ## Team
 - Sanjeeb Tiwary 
    - [sanjeebtiwary](https://github.com/sanjeebtiwary)
