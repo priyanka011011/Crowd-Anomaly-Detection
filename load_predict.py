@@ -1,8 +1,16 @@
 import os
 import cv2
 import numpy as np
-from sklearn.mixture import GaussianMixture
-from tensorflow import keras
+import joblib
+
+def preprocess_frame(frame):
+    # Resize the frame to a specific size
+    resized_frame = cv2.resize(frame, (224, 224))
+
+    # Convert the pixel values to range [0, 1]
+    normalized_frame = resized_frame / 255.0
+
+    return normalized_frame
 
 def extract_features(frames):
     features = []
@@ -20,11 +28,19 @@ def extract_features(frames):
         features.append(flow_flat)
 
     return features
+def further_processing(predictions):
+    # Apply a threshold to the predictions
+    threshold = 0.5
+    processed_predictions = predictions > threshold
 
+    # Convert the processed predictions to the desired format
+    processed_predictions = processed_predictions.astype(int)
+
+    return processed_predictions
 
 def main():
     # Load the saved MDT model
-    mdt_model = keras.models.load_model('model.h5')
+    mdt_model = joblib.load('model.pkl')
 
     # Specify the directory path containing the frames to predict
     frames_directory = 'D:/Data Set/Crowd Anomaly Detection/UCSD_Anomaly_Dataset/UCSDped1/Test/Test001'
@@ -41,10 +57,11 @@ def main():
             # Read the frame using OpenCV
             frame = cv2.imread(file_path)
 
-            # Preprocess the frame if needed
+            # Preprocess the frame
+            preprocessed_frame = preprocess_frame(frame)
 
-            # Append the frame to the list
-            frames.append(frame)
+            # Append the preprocessed frame to the list
+            frames.append(preprocessed_frame)
 
     # Convert frames to numpy array
     frames = np.array(frames)
@@ -61,6 +78,12 @@ def main():
 
     # Predict using the MDT model
     predictions = mdt_model.predict(features_reshaped)
+
+    # Perform further processing on the predictions
+    processed_predictions = further_processing(predictions)
+
+    # Print the processed predictions
+    print(processed_predictions)
 
 if __name__ == '__main__':
     main()
