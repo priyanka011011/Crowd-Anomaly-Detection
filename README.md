@@ -138,9 +138,3 @@ To use the MDT model effectively, here are some essential recommendations for th
    - [Vaibhavi15-04](https://github.com/Vaibhavi15-04)
 - Paramesh 
    - [Paramaatma](https://github.com/Paramaatma)
-- Priyanka
-   - [priyanka011011](https://github.com/priyanka011011)
-- Shubham
-   - [shubhamwankar](https://github.com/shubhamwankar)
-- Humaira (left)
-   - [humairafirdowse](https://github.com/humairafirdowse)
